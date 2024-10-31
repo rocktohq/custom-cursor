@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 a {
@@ -65,4 +66,28 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Cursor */
+.cursor {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: 2px solid cyan;
+}
+
+.cursor-dot {
+  width: 8px;
+  aspect-ratio: 1;
+  background-color: orange;
+}
+
+.cursor,
+.cursor-dot {
+  border-radius: 50%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
